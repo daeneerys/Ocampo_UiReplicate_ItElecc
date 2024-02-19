@@ -18,8 +18,8 @@ const Category = (props) => {
         <h3 className="green">{props.categoryObj.name}</h3>
       ) : (
         <h3
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+          onMouseOver={() => setIsHovered(true)}
+          onMouseOut={() => setIsHovered(false)}
         >
           {props.categoryObj.name}{" "}
         </h3>
